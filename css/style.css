@@ -1,3 +1,4 @@
+/* the animation styling */
 @keyframes mymove {
     from {width: 25px; opacity: 0;}
     to {width: 475px; opacity: 1;}
@@ -7,12 +8,14 @@
     animation: mymove 5s;
 }
 
+/* turn of animation when the user prefers reduced motion */
 @media screen and (prefers-reduced-motion: reduce) {
     #logo {
       animation: none;
     }
   }
 
+/* the styling for the mobile view */
 body {
     font-family: "Poppins", serif;
     background-color: #f1f1f1;
@@ -31,6 +34,7 @@ header {
     justify-content: center;
 }
 
+/* this keeps nav the same color after being visited */
 .nav_item a:visited, nav_item a {
     color: blue;
 }
@@ -71,6 +75,7 @@ header {
     justify-content: center;
 }
 
+/* the large screen view*/
 @media screen and (min-width: 900px) { 
     header {
         flex-direction: row;
@@ -98,6 +103,7 @@ header {
     }
 }
 
+/* print view */
 @media print {
     body {
         font-family: Arial, Helvetica;
